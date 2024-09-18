@@ -1,9 +1,0 @@
-
-.ContatcBtn {
-  background-color: var(--primary-hover-color);
-  color: var(--text-color); 
-  transition: scale 0.8s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition 
-douce pour l'ombre et le scale */
-}
-
-
