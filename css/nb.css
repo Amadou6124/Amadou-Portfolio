@@ -1,0 +1,147 @@
+:root {
+    --background-color: #0e0e0e; /* Fond noir élégant */
+    --text-color: #f5f5f5; /* Texte blanc cassé pour un bon contraste */
+    --primary-hover-color: #f04bff; /* Violet lumineux pour les effets hover */
+    --secondary-color: #ff8c00; /* Orange vif pour les accents ou les boutons */
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  } 
+  .navbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar-toggler{ 
+    padding: 5px;
+    background-color: #ea4af8; /* Couleur des icônes */
+    transition: scale 1s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition douce pour l'ombre et le scale */
+ 
+  }
+ .navbar-toggler:hover {
+    scale: 1; /* Agrandit l'icône à 120% de sa taille normale */
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); /* Ombre lumineuse lors du survol */
+  }
+  .navbar-brand{
+    color: var(--primary-hover-color);
+  }
+  #MyName{
+    color: var(--primary-hover-color);
+  }
+  .icon {
+    color: #ea4af8; /* Couleur des icônes */
+    border-radius: 50%;
+    transition: scale 1s , box-shadow 0.3s ease-in-out; /* Transition douce pour l'ombre et le scale */
+  }
+ .icon:hover{ 
+    scale: 5; /* Agrandit l'icône à 120% de sa taille normale */
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); /* Ombre lumineuse lors du survol */
+  }
+  /* Style pour le lien actif */
+.navbar-nav .nav-link.active {
+    color: #ea4af8; /* Couleur du lien actif */
+    text-decoration: underline; /* Soulignement du lien actif */
+  }
+  
+  /* Style pour le survol des autres liens */
+  .nav-link{
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+    transition: scale 0.4s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+  .navbar-nav .nav-link:hover {
+    color: var(--primary-hover-color);
+    text-decoration: underline; /* Soulignement lors du survol */
+    scale: 1; /* Agrandit l'icône à 120% de sa taille normale */
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); 
+  }
+  .ContatcBtn {
+    background-color: var(--primary-hover-color);
+    color: var(--text-color); /* Couleur des icônes */
+    transition: scale 0.8s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition douce pour l'ombre et le scale */
+  }
+  
+ .ContatcBtn:hover {
+    scale: 1.1; /* Agrandit l'icône à 120% de sa taille normale */
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); /* Ombre lumineuse lors du survol */
+  }
+
+/* ==========  Apropos de moi ===============  */  
+.card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--primary-hover-color);
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Agrandit la carte légèrement */
+    box-shadow: 0 4px 8px rgba(14, 14, 14, 0.3), 0 8px 16px rgba(240, 75, 255, 0.3); /* Ombres avec les deux couleurs */
+  }
+  
+/* ==========  Apropos de moi ===============  */  
+  
+  
+/* ========== (Debut) Style de ma page Contact ====== */
+
+label{
+    color: var(--primary-hover-color);
+    border: 2px solid var(--primary-hover-color);
+}
+.Contact input, .Contact textarea{
+    border: 2px solid var(--primary-hover-color);
+}
+.Contact #message{
+    height: 150px;
+    resize: none;
+}
+.ContatcBtn {
+  background-color: var(--primary-hover-color);
+  color: var(--text-color); 
+  transition: scale 0.8s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition douce pour l'ombre et le scale */
+}
+
+.ContatcBtn:hover {
+  scale: 1.1; 
+  box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7);
+}
+/* Style pour les champs invalides */
+input.invalid,
+textarea.invalid {
+    border-color: #e74c3c; /* Bordure rouge pour indiquer une erreur */
+    background-color: #fce4e4; /* Fond légèrement rouge pour indiquer une erreur */
+}
+
+/* Style pour le message d'erreur */
+.invalid + .msg {
+    color: #fa432f; /* Couleur rouge pour le texte d'erreur */
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Ajout d'un espace sous le champ en cas de message d'erreur */
+label .msg {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* ========== (FIN)  Style de ma page Contact ====== */
+
+
+.nav-footer{
+    height: 40px;
+    font-size: .5em;
+    background-color: var(--primary-hover-color);
+    color: var(--text-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

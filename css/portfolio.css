@@ -1,0 +1,200 @@
+:root {
+    --background-color: #0e0e0e; /* Fond noir élégant */
+    --text-color: #f5f5f5; /* Texte blanc cassé pour un bon contraste */
+    --primary-hover-color: #f04bff; /* Violet lumineux pour les effets hover */
+    --secondary-color: #ff8c00; /* Orange vif pour les accents ou les boutons */
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  } 
+
+  .navbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #0e0e0e;
+  }
+  .navbar-toggler{ 
+    padding: 5px;
+    background-color: #ea4af8; 
+    transition: scale 1s ease-in-out, box-shadow 0.3s ease-in-out;
+ 
+  }
+ .navbar-toggler:hover {
+    scale: 1; 
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7);
+  }  
+  .navbar-brand{
+    color: var(--primary-hover-color);
+    transition: scale 0.4s ease-in-out;
+  }
+  .navbar-brand:hover{
+    color: var(--primary-hover-color);
+    background-color: transparent;
+    scale: 1.1;
+  }
+  .navbar-nav{
+    background: #000000c8;
+    padding: 20px 0 0 15px;
+    border: 1px solid var(--primary-hover-color);
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  .nav-link{
+    color: var(--text-color);
+  }
+  .nav-link:hover{
+    color: var(--primary-hover-color);
+    text-decoration: underline;
+  }
+  .offcanvas-menu{
+    background: var(--primary-hover-color);
+    transition: box-shadow 0.3s ease-in-out;
+    
+  }
+  .offcanvas-menu:hover{
+    color: var(--text-color);
+    background-color: var(--primary-hover-color);
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7);
+  }
+  .offcanvas{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-hover-color);
+    border-radius: 40px;
+  }
+  #Login{
+    background-color:#ea02ff ;
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); 
+  }
+  #LoginClose{
+    background-color: var(--text-color);
+  }
+
+  .toast-header{
+    color: var(--text-color);
+    background-color: var(--primary-hover-color);
+  }
+  .toast-body{
+    color: var(--background-color);
+  }
+/* ==========   Le debut de css de la page d'Acceuil =============  */
+  .icon{
+    color: var(--primary-hover-color);
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid var(--primary-hover-color);
+    border-radius: 100%;
+    transition: scale 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .icon:hover{
+    color: var(--text-color);
+    background-color: var(--primary-hover-color);
+    scale: 1.2;
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); 
+  }
+  .Icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   a.btn{
+    color: var(--primary-hover-color);
+    border-radius: 40px;
+    border: 1px solid var(--primary-hover-color);
+    transition: scale 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  a.btn:hover{
+    color: var(--text-color);
+    background-color: var(--primary-hover-color);
+    scale: 1.1;
+    box-shadow: 0 0 15px 5px rgba(234, 74, 248, 0.7); 
+  }
+img{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-hover-color);
+    box-shadow: 0 0 20px 10px rgba(234, 74, 248, 0.7); 
+    transition:box-shadow 0.3s ease-in-out;
+}
+img:hover{
+    background-color: var(--primary-hover-color);
+    box-shadow: 0 0 30px 20px rgba(234, 74, 248, 0.7); 
+}
+
+
+#Name{
+    color: var(--primary-hover-color);
+}
+/*    Competences  */
+.card{
+    background-color: var(--primary-hover-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px 10px rgba(234, 74, 248, 0.7); 
+    transition: scale 0.3s;
+}
+.card:hover{
+    scale: 1.1;
+}
+/*  Contact   */
+#Contact{
+    color: var(--text-color);
+}
+#Contact input, textarea{
+    border: 1px solid var(--primary-hover-color);
+    background-color: transparent;
+    color: var(--text-color);
+}
+#message{
+    border: 1px solid var(--primary-hover-color);
+    background-color: transparent;
+    height: 150px;
+    resize: none;
+}
+.Contact form button{
+    width: 150px;
+    background-color: var(--primary-hover-color);
+    color: var(--background-color);
+    border: 1px solid var(--primary-hover-color);
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.Contact form button:hover{
+    color: #f04bff;
+    background-color: transparent;
+    border: 1px solid var(--primary-hover-color);
+    box-shadow: 0 0 20px 10px rgba(234, 74, 248, 0.7); 
+}
+form button:active{
+    background-color: var(--red);
+}
+
+  @media screen and (min-width: 768px){
+      .navbar-nav {
+          color: var(--primary-hover-color);
+          border: none;
+          padding: 0;
+          background-color: var(--background-color);
+      }
+      .container{
+        margin-top: 40px;
+      }
+
+    }
+
+/* ==========   LA fin de css de la page d'Acceuil =============  */
+
+@media screen and (min-width: 768px){
+    #About{
+        margin: 100px;
+    }
+    #Contact{
+        margin-top: 200px;
+    }
+}
